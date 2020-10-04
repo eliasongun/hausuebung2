@@ -10,9 +10,10 @@ package htlgrieskirchen.pos.dreia.eongun18;
  * @author eongu
  */
 public class Number {
-    private double a;
+  
     private double b;
-
+    private double a;
+  
     public double getA() {
         return a;
     }
