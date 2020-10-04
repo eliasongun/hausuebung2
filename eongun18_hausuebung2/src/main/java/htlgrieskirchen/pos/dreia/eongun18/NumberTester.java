@@ -5,6 +5,11 @@
  */
 package htlgrieskirchen.pos.dreia.eongun18;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
 /**
  *
  * @author eongu
@@ -14,13 +19,14 @@ public class NumberTester {
     private NumberTest oddTester;
     private NumberTest primeTester;
     private NumberTest palindromeTester;
+    private final String fileName;
     
     
     
     
     public NumberTester(String fileName)
     {
-         
+         this.fileName = fileName;
     }
     
     public void setOddEvenTester(NumberTest oddTester)
@@ -45,7 +51,27 @@ public class NumberTester {
     
     public void testFile()
     {
-    
+      File file = new File(fileName);
+
+        if (!file.canRead() || !file.isFile())
+            System.exit(0);
+
+            BufferedReader in = null;
+        try {
+            in = new BufferedReader(new FileReader(fileName));
+            String zeile = null;
+            while ((zeile = in.readLine()) != null) {
+                System.out.println("Gelesene Zeile: " + zeile);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (in != null)
+                try {
+                    in.close();
+                } catch (IOException e) {
+                }
+        }
     
     }
     
