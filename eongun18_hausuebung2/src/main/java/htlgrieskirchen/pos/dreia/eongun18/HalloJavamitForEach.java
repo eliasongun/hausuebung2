@@ -33,7 +33,7 @@ public class HalloJavamitForEach {
       
       list.forEach(System.out::print);
         
-    
+      
     }
     
 }
