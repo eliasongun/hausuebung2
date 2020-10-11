@@ -35,7 +35,7 @@ public class Main {
                 main.AbstractCalculatorM();
                 break;
             default:
-                System.out.println("FEHLER!!");
+                System.out.println("FEHLER");
         }
     }
 
