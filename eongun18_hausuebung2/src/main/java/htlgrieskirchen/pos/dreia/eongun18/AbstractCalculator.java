@@ -5,7 +5,7 @@
  */
 package htlgrieskirchen.pos.dreia.eongun18;
 
-import htlgrieskirchen.pos.dreia.eongun18.Number.CalculationOperation;
+import htlgrieskirchen.pos.dreia.eongun18.CalculateOperation;
 
 /**
  *
@@ -13,12 +13,12 @@ import htlgrieskirchen.pos.dreia.eongun18.Number.CalculationOperation;
  */
 public abstract class AbstractCalculator {
 
-    protected CalculationOperation add;
-    protected CalculationOperation substract;
-    protected CalculationOperation multiply;
-    protected CalculationOperation divide;
+    protected CalculateOperation add;
+    protected CalculateOperation substract;
+    protected CalculateOperation multiply;
+    protected CalculateOperation divide;
 
-    public AbstractCalculator(CalculationOperation add, CalculationOperation substract, CalculationOperation multiply, CalculationOperation divide) {
+    public AbstractCalculator(CalculateOperation add, CalculateOperation substract, CalculateOperation multiply, CalculateOperation divide) {
         this.add = add;
         this.substract = substract;
         this.multiply = multiply;

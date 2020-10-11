@@ -11,9 +11,18 @@ package htlgrieskirchen.pos.dreia.eongun18;
  */
 public class Number {
   
-    private double b;
     private double a;
-  
+    private double b;
+
+    public Number(double a, double b) {
+        this.a = a;
+        this.b = b;
+    }
+
+   
+   
+    
+    
     public double getA() {
         return a;
     }
@@ -30,11 +39,5 @@ public class Number {
         this.b = b;
     }
     
-    public interface CalculationOperation
-    {
-      Number cale (Number x, Number y);
-      
-      
-    
-    }
+   
 }

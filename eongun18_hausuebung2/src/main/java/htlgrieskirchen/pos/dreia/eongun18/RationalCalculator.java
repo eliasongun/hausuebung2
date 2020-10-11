@@ -11,28 +11,28 @@ package htlgrieskirchen.pos.dreia.eongun18;
  */
 public class RationalCalculator extends AbstractCalculator {
 
-    public RationalCalculator(Number.CalculationOperation add, Number.CalculationOperation substract, Number.CalculationOperation multiply, Number.CalculationOperation divide) {
+    public RationalCalculator(CalculateOperation add, CalculateOperation substract, CalculateOperation multiply, CalculateOperation divide) {
         super(add, substract, multiply, divide);
     }
 
     @Override
     public Number add(Number a, Number b) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return this.add.cale(a, b);
     }
 
     @Override
     public Number substract(Number a, Number b) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       return this.substract.cale(a, b);
     }
 
     @Override
     public Number multiply(Number a, Number b) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return this.multiply.cale(a, b);
     }
 
     @Override
     public Number divide(Number a, Number b) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+      return this.divide.cale(a, b);
     }
-    
+
 }

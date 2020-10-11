@@ -9,6 +9,31 @@ package htlgrieskirchen.pos.dreia.eongun18;
  *
  * @author eongu
  */
-public class VectorCalculator {
-    
+public class VectorCalculator extends AbstractCalculator {
+
+    public VectorCalculator(CalculateOperation add, CalculateOperation substract, CalculateOperation multiply, CalculateOperation divide) {
+        super(add, substract, multiply, divide);
+    }
+
+    @Override
+    public Number add(Number a, Number b) {
+        return this.add.cale(a, b);
+
+    }
+
+    @Override
+    public Number substract(Number a, Number b) {
+        return this.substract.cale(a, b);
+    }
+
+    @Override
+    public Number multiply(Number a, Number b) {
+        return this.substract.cale(a, b);
+    }
+
+    @Override
+    public Number divide(Number a, Number b) {
+        return this.substract.cale(a, b);
+    }
+
 }
