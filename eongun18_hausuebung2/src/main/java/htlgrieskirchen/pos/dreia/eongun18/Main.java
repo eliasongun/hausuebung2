@@ -32,7 +32,7 @@ public class Main {
                 main.numberTesterM();
                 break;
             case 3:
-               
+                main.AbstractCalculatorM();
                 break;
             default:
                 System.out.println("FEHLER!!");
