@@ -26,10 +26,10 @@ public class Main {
         int ausw = Integer.parseInt(sc.nextLine());
         switch(ausw){
             case 1:
-              
+                main.HalloJavaMitForEachM();
                 break;
             case 2:
-               
+                main.numberTesterM();
                 break;
             case 3:
                 main.AbstractCalculatorM();
