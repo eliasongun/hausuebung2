@@ -199,7 +199,7 @@ public class Main {
     }
 
     private void numberTesterM() {
-        NumberTester nt = new NumberTester("NumbersForTest.txt");
+        NumberTester nt = new NumberTester("2_hausuebung.txt");
 
         nt.setOddEvenTester((n) -> {
             if (n % 2 == 0) {

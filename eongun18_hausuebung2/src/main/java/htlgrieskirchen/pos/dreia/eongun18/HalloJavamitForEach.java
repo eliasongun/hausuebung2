@@ -16,24 +16,35 @@ import java.util.function.Consumer;
  * @author eongu
  */
 public class HalloJavamitForEach {
+    List<String> list = new ArrayList<>();
     
-    List<String> list = new ArrayList<String>();
+    public HalloJavamitForEach() {
+        list.add("A");
+        list.add("B");
+        list.add("C");
+    }
     
-    public void forEach()
-    {
-        for (String s : list) {
+    public void printList(){ 
+        for(String s: this.list){
             System.out.println(s);
-            
         }
-            
-        
-      list.forEach((String s) -> System.out.println(s));
-      
-      Consumer<String> consumer = (String s) -> System.out.println(s);
-      
-      list.forEach(System.out::print);
-        
-      
+        System.out.println("______________________________________");
+    }
+    
+    public void printList2(){
+        this.list.forEach((String s) -> System.out.println(s));
+        System.out.println("______________________________________");
+    }
+    
+    public void printList3(){
+        Consumer<String> consumer = (String s) -> System.out.println(s);
+        this.list.forEach(consumer);
+        System.out.println("______________________________________");
+    }
+    
+    public void printList4(){
+        list.forEach(System.out::println);
+        System.out.println("______________________________________");
     }
     
 }
